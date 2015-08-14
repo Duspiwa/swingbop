@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   
  
+  devise_for :users
   resources :posts
   root 'posts#index'
   # You can have the root of your site routed with "root"
