@@ -83,13 +83,14 @@
                             <tr>
                               <td><h4><%= post.title %></h4>*</td>
                               <td><%= post.body %>  </td>
-                              <td> <%= image_tag post.image.url(:thumb)%></td>
-                              <td><button class="button"><%= link_to 'Show', post %></button> </td>
+                              <td> <%= image_tag post.image.url(:thumb)%></td> 
+                              <td><%= link_to "Show", post_path(post), :id => "posts", :class => "button" %></td>
+
 
                                 <% if user_signed_in? %>
                                     <div class="buttons">
-                                          <td><button class="button"><%= link_to 'Edit', edit_post_path(post) %></button> </td> 
-                                          <td><button class="button"><%= link_to 'Delete', post_path(post), 'data-method' => :delete, :class => "delete", :confirm => "Are you sure ?"%> </button> </td> 
+                                          <td><%= link_to "Edit", edit_post_path(post), :id => "posts", :class => "button" %></td> 
+                                          <td><%= link_to 'Delete', post_path(post),:id => "posts", :class => "button",  'data-method' => :delete, :class => "delete", :confirm => "Are you sure ?"%>, </td> 
                                     </div>
                                 <% end %>
                             </tr>
@@ -99,7 +100,7 @@
 
                       <br>
 
-                     <button class="button"><%= link_to 'New Post', new_post_path %></button> 
+                     <%= link_to 'New Post', new_post_path, :id => "posts", :class => "button" %></button> 
                 </div>
    
             </div>
