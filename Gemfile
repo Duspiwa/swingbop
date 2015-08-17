@@ -19,7 +19,7 @@ end
 
 
 gem 'paperclip', '~> 4.3.0'	
-gem 'aws-sdk'																				
+gem 'aws-sdk', '~> 2.1.14'																			
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
