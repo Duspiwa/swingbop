@@ -23,3 +23,13 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+  
+development:
+  access_key_id: AKIAJDDBCPNLS4DQY7IQ
+  secret_access_key: 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
+test:
+  access_key_id: AKIAJDDBCPNLS4DQY7IQ
+  secret_access_key: 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
+production:
+  access_key_id: AKIAJDDBCPNLS4DQY7IQ
+  secret_access_key: 49Dv/mYMzMn16bRmSj7UJ10SuHJnfsOxnpyjv90fp
