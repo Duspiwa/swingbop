@@ -6,20 +6,18 @@ ruby '2.2.2'
 gem 'rails', '4.2.1'
 
 
-group :production do
-	gem 'rails_12factor'
-	gem 'pg'
-end
+gem 'rails_12factor', group: :production
 
-group :development, :test do
-	gem 'sqlite3'
-end
+
+gem 'sqlite3', group: :development
+gem 'pg', '0.18.1', group: :production
+
 
 
 
 
 gem 'paperclip', '~> 4.3.0'	
-gem 'aws-sdk', '~> 2.1.14'																			
+gem 'aws-sdk', '~> 2.1.14'																		
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
