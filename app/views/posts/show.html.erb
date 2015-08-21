@@ -13,8 +13,9 @@
 						  <strong>Comment:</strong>
 						  <%= @post.body %>
 						</p>
- |
-						<button class="button"><%= link_to 'Back', posts_path %></button> 
+ 
+						<%= link_to "Back", posts_path, :id => "posts", :class => "button" %>
+				
        		    </div>
             </div>
    </div>
